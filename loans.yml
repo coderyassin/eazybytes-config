@@ -7,5 +7,5 @@ loans:
     name: "Amaal Grega - Developer"
     email: "amaal@eazybank.com"
   onCallSupport:
-    - (452) 456-2176
-    - (546) 764-8934
+    - '{cipher}662d80b7600b27d52c8e459d5f39c01e36cf0300f54ea0450ac5931ac75195c9'
+    - '{cipher}8375898e8d26bbc85495c5669596f156d7c239aab47e983701383f312cb714e8'
