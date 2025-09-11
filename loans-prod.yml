@@ -10,6 +10,11 @@ loans:
     - (723) 656-8709
     - (156) 342-0956
 
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+
 management:
   endpoint:
     env:
