@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: "prod"
   datasource:
     url: jdbc:mysql://192.168.118.108:3308/cardsdb
     driverClassName: com.mysql.cj.jdbc.Driver
