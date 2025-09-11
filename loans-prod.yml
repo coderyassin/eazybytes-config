@@ -22,7 +22,7 @@ management:
         include: "*"
   endpoint:
     env:
-      show-values: never
+      show-values: always
   
 build:
   version: "3.0"
