@@ -9,3 +9,8 @@ loans:
   onCallSupport:
     - (723) 656-8709
     - (156) 342-0956
+
+management:
+  endpoint:
+    env:
+      show-values: always
