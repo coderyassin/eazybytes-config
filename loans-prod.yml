@@ -1,21 +1,39 @@
-build:
-  version: "1.0"
-
-loans:
-  message: "Hey, welcome to EazyBank loans related prod APIs"
-  contactDetails:
-    name: "Pelias Sudhir - Product Owner"
-    email: "pelias@eazybank.com"
-  onCallSupport:
-    - (723) 656-8709
-    - (156) 342-0956
-
 spring:
+  profiles:
+    active: "prod"
+  datasource:
+    url: jdbc:mysql://192.168.118.108:3307/loansdb
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   rabbitmq:
+    host: "192.168.118.108"
+    port: 5672
     username: guest
     password: guest
 
 management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
   endpoint:
     env:
-      show-values: always
+      show-values: never
+  
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to EazyBank loans related docker APIs"
+  contactDetails:
+    name: "Yassin Mellouki - Developer"
+    email: "y.mellouki@eazybank.com"
+  onCallSupport:
+    - '{cipher}4fec0be050f605ec2d87d3f66e18d795cf40cb381e80087ad4e5c6bb5ebcd657'
+    - '{cipher}5d36bf8e22723f358502459a9184aaa918e7a9e68faed5ac2bc8c72339ccfba2'
