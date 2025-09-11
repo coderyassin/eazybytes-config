@@ -9,3 +9,13 @@ cards:
   onCallSupport:
     - (617) 432-2356
     - (936) 564-8721
+
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+
+management:
+  endpoint:
+    env:
+      show-values: always

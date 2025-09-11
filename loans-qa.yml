@@ -9,3 +9,13 @@ loans:
   onCallSupport:
     - (785) 545-6565
     - (853) 546-3467
+
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+
+management:
+  endpoint:
+    env:
+      show-values: always
