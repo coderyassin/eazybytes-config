@@ -18,4 +18,4 @@ spring:
 management:
   endpoint:
     env:
-      show-values: always
+      show-values: never
