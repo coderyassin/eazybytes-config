@@ -33,8 +33,6 @@ eureka:
   client:
     fetchRegistry: true
     registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://192.168.118.108:8070/eureka/
   
 build:
   version: "3.0"
