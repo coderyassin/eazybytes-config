@@ -30,7 +30,7 @@ management:
 build:
   version: "3.0"
 
-accounts:
+loans:
   message: "Welcome to EazyBank loans related docker APIs"
   contactDetails:
     name: "Yassin Mellouki - Developer"

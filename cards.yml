@@ -1,11 +1,7 @@
-spring:
-  application:
-    name: cards
-
 build:
   version: "3.0"
 
-accounts:
+cards:
   message: "Welcome to EazyBank cards related docker APIs"
   contactDetails:
     name: "Yassin Mellouki - Developer"
