@@ -15,13 +15,12 @@ management:
   endpoint:
     env:
       show-values: always
-  endpoint:
     health:
       probes:
         enabled: true
+    
   health:
     readiness-state:
       enabled: true
     liveness-state:
       enabled: true
-  
