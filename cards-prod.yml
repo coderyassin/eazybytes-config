@@ -28,11 +28,15 @@ management:
       show-values: never
 
 eureka:
+  security:
+    user:
+      name: user
+      password: password
   client:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://eurekaserver:8070/eureka/
+      defaultZone: http://${eureka.security.user.name}:${eureka.security.user.password}@eurekaserver:8070/eureka/
     # Client local cache update frequency
     registry-fetch-interval-seconds: 30
   instance:
@@ -41,7 +45,6 @@ eureka:
     lease-renewal-interval-in-seconds: 30
     # Expiration time before eviction if no more heartbeat
     lease-expiration-duration-in-seconds: 90
-
     
 build:
   version: "3.0"

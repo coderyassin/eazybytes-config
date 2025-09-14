@@ -1,7 +1,19 @@
 server: 
   port: 8070
+
+spring:
+  security:
+    user:
+      name: admin
+      password: password
   
 eureka:
+  server:
+    enable-self-preservation: true
+    # The server calculates the expected heartbeats per minute from all the registered clients
+    renewal-percent-threshold: 0.80
+    # tells the Eureka server to run a job at this frequency to evict the expired clients
+    eviction-interval-timer-in-ms: 60000
   instance:
     hostname: localhost
   client:
