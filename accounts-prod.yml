@@ -28,14 +28,20 @@ management:
       show-values: always
 
 eureka:
-  instance:
-    preferIpAddress: true
   client:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://eurekaserver:8070/eureka/
-  
+    # Client local cache update frequency
+    registry-fetch-interval-seconds: 30
+  instance:
+    preferIpAddress: true
+    # Interval between two heartbeats sent to the server
+    lease-renewal-interval-in-seconds: 30
+    # Expiration time before eviction if no more heartbeat
+    lease-expiration-duration-in-seconds: 90
+
 build:
   version: "3.0"
 
