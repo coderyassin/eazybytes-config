@@ -1,5 +1,6 @@
 spring:
-  import: configserver:http://configserver:8071/  
+  config:
+    import: configserver:http://configserver:8071/  
   datasource:
     url: jdbc:mysql://192.168.118.108:3306/accountsdb
     driverClassName: com.mysql.cj.jdbc.Driver
