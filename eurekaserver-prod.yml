@@ -2,8 +2,6 @@ server:
   port: 8070
 
 spring:
-  config:
-    import: configserver:http://configserver:8071/
   security:
     user:
       name: admin
