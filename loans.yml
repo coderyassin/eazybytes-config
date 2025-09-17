@@ -9,3 +9,12 @@ loans:
   onCallSupport:
     - '{cipher}4fec0be050f605ec2d87d3f66e18d795cf40cb381e80087ad4e5c6bb5ebcd657'
     - '{cipher}5d36bf8e22723f358502459a9184aaa918e7a9e68faed5ac2bc8c72339ccfba2'
+
+info:
+  app:
+    name: loans
+    description: Microservices for Loans
+    version: 0.0.1-SNAPSHOT
+  team: integration
+  contact:
+    email: support-loans@yascode.com
