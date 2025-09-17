@@ -26,7 +26,13 @@ management:
   endpoint:
     env:
       show-values: never
-
+  info:
+    env:
+      enabled: true
+  health:
+    env:
+      enabled: true  
+      
 eureka:
   security:
     user:
