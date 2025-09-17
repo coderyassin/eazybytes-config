@@ -32,7 +32,7 @@ management:
 eureka:
   security:
     user:
-      name: user
+      name: admin
       password: password
   client:
     fetchRegistry: true
