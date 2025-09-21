@@ -24,15 +24,20 @@ management:
       exposure:
         include: "*"
   endpoint:
+    health:
+      probes:
+        enabled: true
     env:
-      show-values: never
+      show-values: always
   info:
     env:
       enabled: true
   health:
-    env:
-      enabled: true  
-      
+    readinessState:
+      enabled: true
+    livenessState:
+      enabled: true 
+
 eureka:
   security:
     user:
