@@ -43,5 +43,5 @@ logging:
 app:
   rate-limit:
     enabled: true     
-    max-requests-per-minute: 100
+    max-requests-per-minute: 5
 
