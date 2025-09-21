@@ -7,22 +7,25 @@ spring:
             locator:
               enabled: true
               lower-case-service-id: true
-              
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
   endpoint:
-    gateway:
-      access: unrestricted
+    health:
+      probes:
+        enabled: true
     env:
       show-values: always
   info:
     env:
       enabled: true
   health:
-    env:
+    readinessState:
+      enabled: true
+    livenessState:
       enabled: true
 
 info:

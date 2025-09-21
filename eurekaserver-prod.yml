@@ -28,15 +28,17 @@ management:
       exposure:
         include: "*"
   endpoint:
-    env:
-      show-values: always
     health:
       probes:
         enabled: true
-    
-  health:
-    readiness-state:
+    env:
+      show-values: always
+  info:
+    env:
       enabled: true
-    liveness-state:
+  health:
+    readinessState:
+      enabled: true
+    livenessState:
       enabled: true
   
