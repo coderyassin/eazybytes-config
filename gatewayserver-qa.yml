@@ -60,7 +60,8 @@ logging:
         gatewayserver: DEBUG
 
 app:
+  correlation-id:
+    prefix: GTW
   rate-limit:
-    enabled: true
     max-requests-per-minute: 100
 
